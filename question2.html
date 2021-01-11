@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Web Tutorial Guru - Online Quiz</title>
+        <link rel="stylesheet" href="css/style.css" />
+        
+    </head>
+    <body>
+
+
+        <div class="box"id="questionScreen">
+
+            <div class="title">
+                Online Quiz Application
+			</div>
+			
+			<div class="questionBox">
+				What does HTML stand for?
+			</div>
+			<br>
+			
+            <div class="answerBox" id="answerScreen" style="display:none;"></div>
+			<br>
+
+            <div class="footer">
+                <button onclick="showNext()">
+                    Next
+                </button>
+				<button onclick="result()">
+					End
+                </button>
+            </div><br>
+			<h5>
+                <button onclick="showAnswer()">
+                    Show answer
+                </button>
+			</h5>
+
+        </div>
+		
+		<div class="box1" id="resultScreen"style="display: none;">
+            
+            <div style="text-align:center">
+                <h1>END OF QUIZ!</h1>
+            </div>
+
+            <div class="buttonBox" style="border-top:none">
+                <a href="question2.html">Start Again</a>
+            </div>
+			<br>
+			<div style="text-align:center"><a href="index.html">Home</a></div>
+
+        </div>
+        
+    </body>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/quiz2.js"></script>
+    <script src="js/tilt.min.js"></script>
+    <script src="js/script.js"></script>
+        
+</html>
+    
