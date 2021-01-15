@@ -342,10 +342,10 @@ let quiz = [
 	{
 		question: "Muhammed Ali was born in which US state?",
 		option: [
-			"",
-			"",
+			"Alabama",
+			"Nevada",
 			"Kentucky",
-			"",
+			"North Carolina",
 		],
 		answer: 3,
 	},
