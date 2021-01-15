@@ -62,6 +62,10 @@ function checkAnswer(option) {
     attempt++;
 
     let optionClicked = $(option).data("opt");
+	let optionA = $("#1").data("opt");
+	let optionB = $("#2").data("opt");
+	let optionC = $("#3").data("opt");
+	let optionD = $("#4").data("opt");
 
     //console.log(questions[index]);
 
@@ -72,6 +76,10 @@ function checkAnswer(option) {
     else {
         $(option).addClass("wrong");
         wrong++;
+		if(optionA == questions[index].answer){$("#1").addClass("right")}
+		else if(optionB == questions[index].answer){$("#2").addClass("right")}
+		else if(optionC == questions[index].answer){$("#3").addClass("right")}
+		else if(optionD == questions[index].answer){$("#4").addClass("right")}
     }
 
     $(".scoreBox span").text(score);
